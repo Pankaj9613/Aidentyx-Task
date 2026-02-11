@@ -1,0 +1,33 @@
+function UserTable({users}){
+
+return(
+
+<table className="table">
+
+<thead>
+<tr>
+<th>ID</th>
+<th>Username</th>
+<th>Password</th>
+</tr>
+</thead>
+
+<tbody>
+
+{users.map(user=>(
+<tr key={user.id}>
+<td>{user.id}</td>
+<td>{user.username}</td>
+<td>{user.password}</td>
+</tr>
+))}
+
+</tbody>
+
+</table>
+
+);
+
+}
+
+export default UserTable;
